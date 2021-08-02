@@ -1,4 +1,4 @@
-# Banking-Management-System-using-C-Mini-Project-With-Encryption
+# Banking-Management-System-using-C-With-Encryption-Using-C
 This is a very simple simulation of internet banking mechanism.
 ## Features included:
   * UPI money transfer
