@@ -166,7 +166,7 @@ void new_acc()
     system("cls");
     system("color 60");
     printf("\t\t\t==== ADD RECORD  ====\n\n");
-    printf("Please enter the details without spaces between test fields\n");
+    printf("Please enter the details without spaces \n");
     //printf("\n\n\nEnter today's date(mm/dd/yyyy):");
     //scanf("%d/%d/%d",&add.deposit.month,&add.deposit.day,&add.deposit.year);
     printf("\nEnter the account number: ");
@@ -562,7 +562,7 @@ void del_acc()
     }
     else if(flag==1)
         {
-            printf("\nThank you for being part of out bank =)\n");
+            printf("\nThank you for being part of our bank =)\n");
             system("del record.dat");
             system("ren new.dat record.dat");
             printf("\nAccount deleted successfully!\n");
