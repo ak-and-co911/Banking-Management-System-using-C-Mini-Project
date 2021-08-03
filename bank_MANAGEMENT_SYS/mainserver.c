@@ -445,8 +445,8 @@ void upi_pay()
         decrypt(&check);
         if ((check.acc_no==num) && (strcmp(check.upi,upi1)==0))
             {
-            if(check.acc_no<amt)
-            {printf("\nInsufficient balance!\n");flag==3;break;}
+            if(check.amt<amt)
+            {printf("\nInsufficient balance!\n");flag=3;break;}
             flag+=1;
             check.amt=(check.amt)-amt;
             num=check.amt;
@@ -483,7 +483,6 @@ void upi_pay()
     {
         system("del new.dat");
         printf("\nThe details you have entered are incorrect!\n");
-        
     }
      while(1)
     {printf("\n\n\n\t\tEnter 1 to retry and 0 to exit:");
